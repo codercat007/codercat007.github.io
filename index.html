@@ -1,19 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Name | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Data Science Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 1.5rem auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+    }
+
+    .subtle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 0.4rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Your Name</h1>
-  <p>AI | ML | Developer</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Project 1</li>
-    <li>Project 2</li>
-  </ul>
+<header>
+  <h1>Emerging Data & AI Enthusiast</h1>
+  <p>
+    Strong foundation in computer science and data analytics, with a passion for transforming
+    data into meaningful insights through applied machine learning, deep learning,
+    and computational problem solving.
+  </p>
+</header>
 
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+<section>
+  <h2>🎓 Education</h2>
+
+  <div class="card">
+    <h3>Integrated MSc Data Science</h3>
+    <p class="subtle">Amrita Vishwa Vidhyapeetham, Ettimadai, TN | Sept 2022 – April 2027</p>
+    <ul>
+      <li>Core focus on AI, Machine Learning, Statistical Modeling, Data Processing and Analysis</li>
+      <li>Extensive coursework in Python, R, Java, C++, Database Systems, and Computational Models</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>📜 Certifications</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Machine Learning Specialization</h3>
+      <p class="subtle">Stanford & DeepLearningAI | Dec 2024 – Mar 2025</p>
+      <ul>
+        <li>Supervised learning: linear & logistic regression</li>
+        <li>Neural networks, decision trees & ensemble models</li>
+        <li>Clustering, anomaly detection & recommender systems</li>
+        <li>Deep reinforcement learning foundations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Deep Learning Specialization</h3>
+      <p class="subtle">DeepLearningAI | May 2025 – Aug 2025</p>
+      <ul>
+        <li>CNNs for vision tasks and neural style transfer</li>
+        <li>RNNs, NLP, embeddings & transformers</li>
+        <li>Hands-on TensorFlow implementations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>IBM Deep Learning</h3>
+      <p class="subtle">Coursera | Sept 2025 – Present</p>
+      <ul>
+        <li>Advanced CNNs, RNNs, and Transformer architectures</li>
+        <li>Regression, classification & time-series modeling</li>
+        <li>Performance evaluation and optimization</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>💼 Work Experience</h2>
+
+  <div class="card">
+    <h3>Machine Learning Intern</h3>
+    <p class="subtle">Sony SSUP | Dec 2024 – Sept 2025</p>
+    <ul>
+      <li>Built and optimized ML models for image classification and audio signal processing</li>
+      <li>Developed UI components for internal ML tools</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>🔬 Research & Projects</h2>
+
+  <div class="card">
+    <h3>Breast Cancer Detection (Ongoing Research)</h3>
+    <p class="subtle">July 2025 – Present</p>
+    <ul>
+      <li>Hybrid deep neural network for mammogram classification</li>
+      <li>Experiments with VGG16, ResNet and attention fusion mechanisms</li>
+      <li>Research paper preparation for academic conference publication</li>
+      <li><strong>Tools:</strong> PyTorch, Torchvision, NumPy, Scikit-learn</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>🏆 Hackathons</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>S.H.E.CodesAI – 🥇 1st Place</h3>
+      <p class="subtle">March 2025</p>
+      <ul>
+        <li>AI-powered financial planning application</li>
+        <li>Neural network-based spending optimization</li>
+        <li><strong>Tools:</strong> PyTorch, Streamlit, Pandas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Bharatiya Antariksh Hackathon</h3>
+      <p class="subtle">July 2025</p>
+      <ul>
+        <li>Chain-of-Thought LLM system for geospatial analysis</li>
+        <li>RAG-based modular LLM orchestration</li>
+        <li><strong>Tools:</strong> LangChain, FAISS, PyQGIS, HuggingFace</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Smart India Hackathon</h3>
+      <p class="subtle">September 2025</p>
+      <ul>
+        <li>Price regulation model for farmers using FPO structures</li>
+        <li><strong>Tools:</strong> PyTorch, Selenium, Streamlit</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🛠 Skills</h2>
+
+  <div class="card skills">
+    <span>Python</span>
+    <span>PyTorch</span>
+    <span>TensorFlow</span>
+    <span>NumPy</span>
+    <span>Pandas</span>
+    <span>Scikit-learn</span>
+    <span>Machine Learning</span>
+    <span>Deep Learning</span>
+    <span>Data Analysis</span>
+    <span>SQL</span>
+    <span>Django</span>
+    <span>HTML & CSS</span>
+    <span>Git & GitHub</span>
+    <span>MPI</span>
+    <span>Research Writing</span>
+    <span>Leadership</span>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2026 | Built with ❤️ and curiosity  
+    <br>
+    <a href="https://github.com/yourusername">GitHub</a> •
+    <a href="#">LinkedIn</a> •
+    <a href="mailto:youremail@example.com">Email</a>
+  </p>
+</footer>
+
 </body>
 </html>
